@@ -6,7 +6,7 @@ RUN apk add --update --no-cache \
     bash \
     ca-certificates \
     curl \
-    wget \
+    wget
 
 # Install hugo.
 ARG HUGO_VERSION=0.25.1
