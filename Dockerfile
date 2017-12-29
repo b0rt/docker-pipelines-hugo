@@ -1,5 +1,5 @@
 FROM alpine:3.6
-MAINTAINER Karel Bemelmans <mail@karelbemelmans.com>
+MAINTAINER Stephan Deglow <info@deglowdesign.de>
 
 # Install packages needed to build
 RUN apk add --update --no-cache \
@@ -10,7 +10,6 @@ RUN apk add --update --no-cache \
     py-pip \
     wget \
   && pip install --upgrade pip \
-  && pip install -U awscli
 
 # Install hugo.
 ARG HUGO_VERSION=0.25.1
