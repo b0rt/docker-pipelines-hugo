@@ -1,10 +1,16 @@
 *Notice: This repository was created as an example and will most likely not be updated with newer releases of Hugo. Feel free to fork this and make whatever changes you want.*
 
+*For now this is work in progress!*
+
 # Pipelines Hugo
 
-This is a Docker image that contains Hugo, the static website generator and the aws-cli Python scripts. I use this container to deploy my Hugo blog to AWS S3 using Atlassian Bitbucket Pipelines.
+This is a fork of [karlbemelmans version](https://github.com/karelbemelmans/docker-pipelines-hugo). He uses aws-cli. I do not.
 
-Check [this blog post](https://www.karelbemelmans.com/2016/10/deploying-a-hugo-website-to-amazon-s3-using-bitbucket-pipelines/) for more information about how to use this Docker image for your Pipelines setup.
+## Todo
+
+- should execute hugo (in pipelines)
+- should be able to copy content from public/ to an FTP drive
+
 
 ## MIT License
 
