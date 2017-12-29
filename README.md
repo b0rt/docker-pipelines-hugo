@@ -12,6 +12,15 @@ This is a fork of [karlbemelmans version](https://github.com/karelbemelmans/dock
 - should be able to copy content from public/ to an FTP drive
 
 
+### how to debug / extend
+
+```
+# build the container locally
+$ docker build .
+
+```
+
+
 ## MIT License
 
 Copyright 2017 Karel Bemelmans
