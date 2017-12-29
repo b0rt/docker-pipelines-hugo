@@ -6,10 +6,7 @@ RUN apk add --update --no-cache \
     bash \
     ca-certificates \
     curl \
-    python \
-    py-pip \
     wget \
-  && pip install --upgrade pip \
 
 # Install hugo.
 ARG HUGO_VERSION=0.25.1
