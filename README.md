@@ -18,6 +18,10 @@ This is a fork of [karelbemelmans version](https://github.com/karelbemelmans/doc
 # build the container locally
 $ docker build -t hugo-for-pipelines .
 
+# run the container in pipelines comparable settings (from your website project)
+# to debug, test the steps that will go in the bitbucket-pipelines.yml of your project
+
+$ docker run -it --volume=C:\Users\b0r7\workspace-websites\project-dir:/project-dir dir="/project-dir" --memory=4g --memory-swap=4g --memory-swappiness=0 --entrypoint=/bin/bash hugo-for-pipelines
 ```
 
 
