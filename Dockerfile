@@ -4,6 +4,7 @@ MAINTAINER Stephan Deglow <info@deglowdesign.de>
 # Install packages needed to build
 RUN apk add --update --no-cache \
     bash \
+    ftp \
     ca-certificates \
     curl \
     wget
