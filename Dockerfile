@@ -9,7 +9,7 @@ RUN apk add --update --no-cache \
     wget
 
 # Install hugo.
-ARG HUGO_VERSION=0.25.1
+ARG HUGO_VERSION=0.31.1
 ARG HUGO_SHA256=fbf8ca850aaaaad331f5b40bbbe8e797115dab296a8486a53c0561f253ca7b00
 
 # Rember sha256sum (and md5sum) expect 2 spaces in front of the filename on alpine...
