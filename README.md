@@ -12,16 +12,10 @@ This is a fork of [karelbemelmans version](https://github.com/karelbemelmans/doc
 - should be able to copy content from public/ to an FTP drive
 
 ## Issues
-- wont install ftp
+- ~~wont install ftp~~
     - https://github.com/gliderlabs/docker-alpine/issues/55
+    - resolution: [lftp](http://lftp.tech/lftp-man-alt.html)
     
-```
-bash-4.3# cat /etc/apk/repositories
-http://dl-cdn.alpinelinux.org/alpine/v3.6/main
-http://dl-cdn.alpinelinux.org/alpine/v3.6/community
-```
-
-
 
 ### how to debug / extend
 
