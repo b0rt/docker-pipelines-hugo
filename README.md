@@ -4,11 +4,11 @@
 
 # Pipelines Hugo
 
-This is a fork of [karlbemelmans version](https://github.com/karelbemelmans/docker-pipelines-hugo). He uses aws-cli. I do not.
+This is a fork of [karelbemelmans version](https://github.com/karelbemelmans/docker-pipelines-hugo). He uses aws-cli. I do not.
 
 ## Todo
 
-- should execute hugo (in pipelines)
+- should execute hugo (container running in bitbucket pipelines)
 - should be able to copy content from public/ to an FTP drive
 
 
@@ -16,7 +16,7 @@ This is a fork of [karlbemelmans version](https://github.com/karelbemelmans/dock
 
 ```
 # build the container locally
-$ docker build .
+$ docker build -t hugo-for-pipelines .
 
 ```
 
