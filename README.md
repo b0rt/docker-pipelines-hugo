@@ -1,34 +1,29 @@
 *Notice: This repository was created as an example and will most likely not be updated with newer releases of Hugo. Feel free to fork this and make whatever changes you want.*
 
-*For now this is work in progress!*
 
-# Pipelines Hugo
 
-This is a fork of [karelbemelmans version](https://github.com/karelbemelmans/docker-pipelines-hugo). He uses aws-cli. I do not.
+# hugo for bitbucket pipelines
+
+This is a fork of [karelbemelmans version](https://github.com/karelbemelmans/docker-pipelines-hugo). He uses aws-cli.  
+This container uses ncftp to copy files
 
 ## Todo
 
-- should execute hugo (container running in bitbucket pipelines)
-- should be able to copy content from public/ to an FTP drive
+- ~~should execute hugo (container running in bitbucket pipelines)~~
+- ~~should be able to copy content recursively from public/ to an FTP drive~~
+- add scp functionality / examples
 
-## Issues
-- ~~wont install ftp~~
-    - https://github.com/gliderlabs/docker-alpine/issues/55
-    - resolution: [lftp](http://lftp.tech/lftp-man-alt.html)
     
-
 ### how to debug / extend
 
 ```
-# build the container locally
+# you could build the container locally
 $ docker build -t hugo-for-pipelines .
 
-# run the container in pipelines comparable settings (from your website project)
-# to debug, test the steps that will go in the bitbucket-pipelines.yml of your project
+# or run run the cloud container in pipelines comparable settings (from your website project)
 
-$ docker run -it --volume=C:\Users\b0r7\workspace-websites\project-dir:/project-dir --workdir="/project-dir" --memory=4g --memory-swap=4g --memory-swappiness=0 --entrypoint=/bin/bash b0r7/hugo-for-pipelines
+$ docker run -it --volume=C:\Users\USERNAME\workspace-websites\project-dir:/project-dir --workdir="/project-dir" --memory=4g --memory-swap=4g --memory-swappiness=0 --entrypoint=/bin/bash b0r7/hugo-for-pipelines
 ```
-
 
 ## MIT License
 
