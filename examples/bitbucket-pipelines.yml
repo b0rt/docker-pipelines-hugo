@@ -1,0 +1,13 @@
+# you can specify environment variables for
+# each bitbucket repository under Settings > Environment Variables
+
+image: b0r7/hugo-for-pipelines
+
+pipelines:
+  branches:
+     master:
+       - step:
+           script:
+             - hugo
+             - ./ftpdeploy.sh $FTP_USER $FTP_PASS $FTP_HOST
+             
