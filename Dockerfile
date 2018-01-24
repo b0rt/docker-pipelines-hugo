@@ -7,7 +7,9 @@ RUN apk add --update --no-cache \
     ncftp \
     ca-certificates \
     curl \
-    wget
+    wget \
+    openssh-client &&\
+    rm -rf /var/cache/apk/*
 
 # Install hugo.
 ARG HUGO_VERSION=0.31.1
