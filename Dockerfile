@@ -12,8 +12,8 @@ RUN apk add --update --no-cache \
     rm -rf /var/cache/apk/*
 
 # Install hugo.
-ARG HUGO_VERSION=0.36
-ARG HUGO_SHA256=dc373a46487422f35ddedf4a4d3a490019d6aa4789db2bdf7475ef675bdfdff7
+ARG HUGO_VERSION=0.53
+ARG HUGO_SHA256=0e4424c90ce5c7a0c0f7ad24a558dd0c2f1500256023f6e3c0004f57a20ee119
 
 # Rember sha256sum (and md5sum) expect 2 spaces in front of the filename on alpine...
 RUN curl -Ls https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz \
