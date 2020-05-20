@@ -13,7 +13,7 @@ RUN apk add --update --no-cache \
 
 # Install hugo.
 ARG HUGO_VERSION=0.71.0
-ARG HUGO_SHA256=a6a7b8956200af6681caccd592733f25a0320f027f20a15398608757d05d2391
+ARG HUGO_SHA256=7da50efc00ca59e5fda06468751045271bbdc3b5f504a3824e3af2d5e04fb7cd
 
 # Rember sha256sum (and md5sum) expect 2 spaces in front of the filename on alpine...
 RUN curl -Ls https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz \
